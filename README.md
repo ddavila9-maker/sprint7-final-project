@@ -1,7 +1,9 @@
 # sprint7-final-project
 # Análisis de datos - ConnectaTel
 
-Proyecto de análisis exploratorio de datos (EDA) sobre el comportamiento de uso de clientes de ConnectaTel, una empresa de telecomunicaciones. La idea es limpiar los datos, explorar el comportamiento de los usuarios y segmentarlos por edad y nivel de uso, para sacar conclusiones que le sirvan al negocio.
+## Objetivo del proyecto
+
+Analizar el comportamiento de uso de los clientes de ConnectaTel, una empresa de telecomunicaciones. La idea es limpiar los datos, explorar el comportamiento de los usuarios y segmentarlos por edad y nivel de uso, para sacar conclusiones que le sirvan al negocio a la hora de mejorar sus planes.
 
 ## Datasets
 
@@ -15,7 +17,7 @@ Proyecto de análisis exploratorio de datos (EDA) sobre el comportamiento de uso
 - pandas y numpy
 - seaborn y matplotlib
 
-## Qué se hizo
+## Etapas del análisis
 
 ### 1. Carga y exploración inicial
 - Se cargaron los 3 datasets
@@ -92,3 +94,16 @@ Por edad:
 - No eliminar a los usuarios outliers, tratarlos como un segmento de alto valor
 - Enfocar las estrategias comerciales en el nivel de uso y no en la edad
 - Mejorar cómo se captura la ciudad del usuario al registrarse, para no perder ese dato
+
+## Cómo ejecutar el notebook
+
+1. Abrir el archivo .ipynb en Google Colab (se puede subir directo desde GitHub con "Abrir en Colab", o desde tu computador con Archivo > Subir notebook)
+2. Subir los 3 archivos csv (plans.csv, users_latam.csv, usage.csv) a la carpeta /datasets/ dentro del entorno de Colab, o ajustar la ruta según donde los tengas
+3. Correr las celdas en orden, de arriba hacia abajo, porque cada paso depende del anterior (por ejemplo, la limpieza depende de la carga, y la segmentación depende de la tabla ya agregada)
+
+## Guía de reproducción
+
+- Si quieres correrlo de nuevo desde cero, basta con reiniciar el entorno de ejecución (Entorno de ejecución > Reiniciar y ejecutar todo)
+- No hace falta instalar nada aparte, Colab ya trae pandas, numpy, seaborn y matplotlib instalados
+- Si corres el notebook localmente (no en Colab), instalar las librerías con: pip install pandas numpy seaborn matplotlib
+- Los datasets deben estar en la misma ruta que se usa en el notebook (por defecto /datasets/), si cambian de ubicación hay que actualizar las rutas en las celdas de carga
